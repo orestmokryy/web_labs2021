@@ -1,0 +1,224 @@
+.img_section_slogan_div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.img_section_slogan_link {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.images_list_item {
+  margin: auto;
+  list-style-type: none;
+  border-radius: 20px;
+}
+.line2 {
+  background-color: black;
+  height: 2px;
+  width: 56px;
+  margin: 20px auto;
+}
+.last_section_wraper {
+  background-color: #fff;
+  padding-bottom: 50px;
+}
+.img_section_desc_div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.images_list_img {
+  border-radius: 9px;
+}
+.last_section_desc {
+  margin-left: 11%;
+  margin-right: 11%;
+  margin-bottom: 60px;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #7d7987;
+  mix-blend-mode: normal;
+}
+.last_section_slogan {
+  margin:20px auto;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+.img_section_slogan_link {
+  text-decoration: none;
+  color: #fb8f1d;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.last_section {
+  padding-top: 120px;
+}
+.row {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.third_section_button {
+  margin-bottom: 200px;
+  margin-top: 70px;
+  margin-left: 90%;
+  width: 200px;
+  height: 55px;
+  border-radius: 50px;
+  background-color: white;
+  color: dodgerblue;
+  border: 1px solid dodgerblue;
+}
+.first_block_image {
+  margin-top: 20px;
+  margin-left: 10%;
+  height: 35%;
+  width: 35%;
+}
+.second_block_image {
+  margin-top: 20px;
+  margin-left: 10%;
+  height: 27%;
+  width: 27%;
+}
+.third_block_image {
+  margin-top: 20px;
+  margin-left: 10%;
+  height: 27%;
+  width: 27%;
+}
+.services_block {
+  position: flex;
+  background: #ffffff;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+.block_slogan {
+  margin-left: 10%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 56px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+.block_desc {
+  margin-left: 10%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #7d7987;
+  mix-blend-mode: normal;
+}
+.image_description_div {
+  margin-top: -40px;
+  background-color: #fff;
+  position: relative;
+  width: 120px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.image_description_heading {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.image_description_desc {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 15px;
+  color: #7d7987;
+}
+
+.last_section_circle_div {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.img_section_slogan_block {
+  margin-left: auto;
+}
+
+@media all and (max-width: 960px) {
+  .last_section_slogan{
+    margin: 0 auto;
+  }
+  .line{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .block_desc {
+    margin: 0 auto;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7d7987;
+    mix-blend-mode: normal;
+  }
+  .block_slogan {
+    margin: 0 auto;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 56px;
+    color: #000000;
+    mix-blend-mode: normal;
+  }
+  .first_block_image {
+    margin: 20px auto;
+    height: 35%;
+    width: 35%;
+  }
+  .second_block_image {
+    margin: 20px auto;
+    height: 27%;
+    width: 27%;
+  }
+  .third_block_image {
+    margin: 20px auto;
+    height: 27%;
+    width: 27%;
+  }
+  .col-4 {
+    width: 100%;
+  }
+  .col-6 {
+    width: 100%;
+  }
+  .services_block {
+    text-align: center;
+  }
+  .third_section_button {
+    display: block;
+    margin: 40px auto 40px auto;
+    width: 200px;
+    height: 55px;
+    border-radius: 50px;
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+  }
+}

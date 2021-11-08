@@ -1,0 +1,149 @@
+.footer_wrapper {
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+}
+
+.footer {
+  padding-top: 66px;
+  float: left;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  height: 165px;
+}
+.footer2 {
+  padding-top: 66px;
+  float: right;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  height: 165px;
+}
+
+.footer_text {
+  margin-left: auto;
+  font-family: "Mulish", sans-serif;
+  color: #848484;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: right;
+}
+
+.footer_line {
+  background-color: #c4c4c4;
+  height: 1px;
+  margin: 20px auto;
+}
+
+.social_media_list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social_media_item {
+  font-size: 24px;
+  margin: 0 15px;
+}
+
+.social_media_item:hover {
+  color: dodgerblue;
+}
+
+.social_media_block {
+  padding-top: 3px;
+}
+
+.social_media_item {
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.social_media_item > a {
+  color: #000;
+}
+
+.images_list_img {
+  width: 100%;
+  height: auto;
+}
+
+.top_section {
+  align-items: center;
+  display: flex;
+}
+
+.footer_item {
+  margin-left: 15%;
+  display: inline;
+  text-align: center;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+}
+.logo2{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.fitta{
+  padding-top: 0;
+}
+.footer_part{
+  padding-left: 30%;
+}
+@media all and (max-width: 960px) {
+  .footer_part{
+    padding-left: 0;
+  }
+  .fitta{
+    display: none;
+  }
+  .top_section {
+    align-items: center;
+    display: block;
+    padding-top: 20px;
+  }
+  .col-9,
+  .col-1,
+  .col-2 {
+    width: 100%;
+  }
+  .footer_text {
+    text-align: center;
+  }
+  .logo_img {
+    display: block;
+    margin: 0 auto;
+  }
+  .logo_div{
+    display: block;
+    margin: 0 auto;
+  }
+  .footer_item {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+  }
+}

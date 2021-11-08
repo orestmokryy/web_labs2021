@@ -1,0 +1,151 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.menu_link {
+  text-decoration:none;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #1F1534;
+  opacity: 0.5;
+}
+
+.menu_link:hover {
+  color: #000;
+}
+
+.logo_img {
+  width: 40px;
+  height: 40px;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 30px;
+}
+
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+.logo_title {
+  display: inline;
+  width: 39%;
+  text-align: center;
+  padding:6px;
+  padding-right: 54%;
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: black;
+}
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+  padding: 15px;
+}
+
+.active .item {
+  display: block;
+}
+
+.menu {
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  background: none;
+}
+.logo {
+  flex: 1;
+}
+.item {
+  order: 1;
+  position: relative;
+  display: block;
+  width: auto;
+}
+.button {
+  order: 2;
+}
+.toggle {
+  display: none;
+}
+
+.fa-times:before,
+.fa-bars:before {
+  color: black;
+}
+
+@media all and (max-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo_title{
+    display: none;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+
+  .item.button {
+    margin-top: 10px;
+  }
+  .button a {
+    padding: 10px 40px;
+  }
+
+}
+
+@media all and (max-width: 960px) {
+  .logo {
+    flex: 0;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 30px;
+  }
+
+  .item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .toggle {
+    order: 1;
+    font-size: 20px;
+    display: block;
+  }
+
+  .item.button {
+    margin-top: 10px;
+  }
+  .button a {
+    padding: 10px 40px;
+  }
+  .logo_title{
+    margin-left: -30%;
+  }
+}

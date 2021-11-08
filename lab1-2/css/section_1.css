@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.first_section {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 120px;
+}
+
+.slogan {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  mix-blend-mode: normal;
+}
+.first_section_desc {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px; 
+    color: #7D7987;
+    mix-blend-mode: normal;
+}
+
+.select_group_1,
+.select_group_2 {
+  display: flex;
+}
+
+.select {
+  border: 1px solid #afb0b9;
+  padding: 10px 40px 10px 10px;
+  width: 200px;
+  margin: 10px 20px 15px 0;
+  border-radius: 6px;
+}
+
+.section_description {
+  padding-top: 70px;
+  padding-bottom: 20px;
+  font-size: 22px;
+}
+
+.first_section_img {
+  height: auto;
+  width: 100%;
+}
+
+.line {
+  width: 32px;
+  height: 2px;
+  background: #202336;
+  border-radius: 4px;
+}
+
+.select_group_big {
+  margin-top: 40px;
+}
+
+.first_section_button {
+  width: 200px;
+  height: 60px;
+  border-radius: 55px;
+  background-color: dodgerblue;
+  color: white;
+  border: 1px solid white;
+  box-shadow: none;
+  animation: pulse 5s infinite;
+}
+@keyframes pulse{
+  0%{
+    background-color: dodgerblue;
+  }
+  50%{
+    background-color: crimson;
+  }
+  100%{
+    background-color: dodgerblue;
+  }
+}
+.first_section_button:hover {
+  background-color: #fff;
+  border: 1px solid white;
+  color: dodgerblue;
+}
+
+@media all and (max-width: 960px) {
+  .col-4 {
+    width: 100%;
+  }
+  .slogan {
+    text-align: center;
+  }
+  .first_section_desc{
+    text-align: center;
+    padding: 60px 0px;
+  }
+  .section_description {
+    text-align: center;
+  }
+  .line {
+    display: block;
+    margin: 0 auto;
+  }
+  .first_section_button {
+    display: block;
+    margin: 40px auto 40px auto;
+  }
+  .select_group_1,
+  .select_group_2 {
+    justify-content: center;
+  }
+}
