@@ -9,11 +9,10 @@ import axios from 'axios';
 export default function SingleItemPage(props) {
   const { id } = useParams();
 
-  const [appState, setAppState] = useState({});
+  const [appState, setAppState] = useState([]);
 
   axios.get(`/blog/${id}`).then(data => {
     setAppState(data.data);
-    console.log(data);
   });
 
   return (

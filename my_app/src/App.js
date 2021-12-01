@@ -2,14 +2,11 @@ import { React } from 'react';
 import Menu from './components/Menu/menu';
 import Footer from './components/Footer/footer';
 import SingleItemPage from './components/SingleItemPage/SingleItemPage';
-import SingleBlogPage from './components/SingleBlogPage/SingleBlogPage';
-
 import Main from './Pages/Main/Main';
-import Blog from './Pages/Blog/Blog';
+import Cart from './Pages/Cart/Cart';
 import Contacts from './Pages/Contacts/Contacts';
 import Catalog from './Pages/Catalog/Catalog';
-
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -23,7 +20,7 @@ function App() {
       <Route path="/catalog" component={Catalog} exact />
       <Route path="/contacts" component={Contacts} exact />
       <Route path="/book/:id" component={SingleItemPage} exact />
-      {/* <Route path="/blog/:id" component={SingleBlogPage} exact /> */}
+      <Route path="/cart" component={Cart} exact />
       <Footer />
     </Router>
   );

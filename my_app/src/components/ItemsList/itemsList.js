@@ -2,7 +2,7 @@ import { Container, Card, Col, Row } from 'react-bootstrap';
 import Item from '../Item/item';
 
 import React from 'react';
-const ItemsList = props => {
+function ItemsList(props) {
   const { books } = props;
   if (!books || books.length === 0) return <p>No books, sorry</p>;
   return (

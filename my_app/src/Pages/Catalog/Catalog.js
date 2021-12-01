@@ -9,7 +9,7 @@ export default function Catalog() {
   const [booksList, setbooksList] = useState();
 
   const fetchData = async () => {
-    return await fetch('/books')
+    return await fetch('http://127.0.0.1:5000/books')
       .then(response => response.json())
       .then(data => {
         setbooksList(data);
@@ -25,8 +25,8 @@ export default function Catalog() {
     setbooksList(filtered);
   };
 
-  useEffect(() => {
-    fetchData();
+  useEffect(async () => {
+    await fetchData();
   }, []);
 
   function less_than_500() {
